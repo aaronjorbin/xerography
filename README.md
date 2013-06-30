@@ -51,6 +51,9 @@ projectDirectory refers to where you are running Slidedown.js.
 
 Xerography is maintained by [Aaron Jorbin](http://aaron.jorb.in) <aaron@jorb.in> 
 
+## Mailing List
+Have a question?  Need help?  Hit up the [mailing list](https://groups.google.com/forum/#!forum/xerography)
+
 ## Bugs & so forth
 
 Please report bugs or request new features at the GitHub page for Xerography: https://github.com/aaronjorbin/xerography/
