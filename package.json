@@ -1,0 +1,26 @@
+{
+  "author": "Aaron Jorbin <aaron@jorb.in> (http://aaron.jorb.in)",
+  "name": "xerography",
+  "description": "builds a site based solely on a reedme.md",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git", 
+    "url": "https://github.com/aaronjorbin/xerography"
+  },
+  "engines": {
+    "node": "~0.10.*"
+  },
+  "bin" : {
+    "xerography" : "./bin/xerography.js"
+  },
+  "dependencies" : {
+    "marked" : ">=0.2.5",
+    "lodash" : ">=1.2.1",
+    "fs.extra" : "=1.2.1",
+    "node-static" : ">=0.5.9",
+     "xerography-peppercorn-saison": ">=0.0.0"
+  },
+  "preferGlobal": true,
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
