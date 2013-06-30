@@ -1,0 +1,55 @@
+<html>
+  <head>
+  <title>Xerography!</title>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/combo?pure/0.1.0/base-min.css&pure/0.1.0/grids-min.css">
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<a href="https://github.com/beerjs/dc"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+    <div class="pure-g-r">
+        <div class="pure-u-1">
+<h1>Xerography</h1>
+<p>Having and maintaining a website for your github project should be as easy as writing your readme.  This is still a very early version.</p>
+<h2>Why Xerography?</h2>
+<p>When you open source a project, you want to have a website for it.  And you want to keep the website up to date.  Often times we allow our project websites to get out of date.  Xerography is fed by your</p>
+<h2>What is Xerography?</h2>
+<p>Xerography is defined by Wikipedia as &quot;is a dry photocopying technique invented by Chester Carlson in 1938, for which he was awarded U.S. Patent 2,297,691 on October 6, 1942. Carlson originally called his invention electrophotography. It was later renamed xerographyý &mdash; from the Greek roots xeros &quot;dry&quot; and -graphia &quot;writing&quot; &mdash; to emphasize that, unlike reproduction techniques then in use such as cyanotype, this process used no liquid chemicals.&quot;</p>
+<p>Xerography works similiarly, it is dry writing.  It doesn&#39;t require you to write anything special other then your xerography config (and that is only if you don&#39;t want to use the defaults)</p>
+<h2>Themes</h2>
+<p>Themes are seperate node.js repositories.  By default, Xerography installs Xerography-Peppercorn-Saison so that you have a theme to begin with.  For now, take a look at Xerography-Peppercorn-Saison so you can see how to build your own theme.</p>
+<h2>How it works</h2>
+<h3>Install</h3>
+<pre><code>npm install -g xerography</code></pre>
+<h3>xerography.js</h3>
+<p>In your project Directory, create a xerography.js file and use module.exports to share a configuration with Xerography </p>
+<h3>Running Xerography</h3>
+<p>Once installed, calling Xerography will create a public dir that contains your projects  website. Using <a href="https://github.com/git/git/blob/master/contrib/subtree/git-subtree.txt">Git Subtree</a>, you can then deploy to the gh-pages branch of your github repo</p>
+<h2>Defaults</h2>
+<pre><code>{
+    &#39;template&#39;: &#39;xerography-peppercorn-saison&#39;, // the name of the theme you want to you use.  If you are using an included template, this is all you need to specify
+    &#39;title&#39;: &#39;My Awesone Project&#39;, // Themes should add your title automatticaly 
+    &#39;source&#39;: [&#39;README.md&#39;], // the file that is used for the slides
+    &#39;port&#39;; 4242 , // The port that the files are served on
+    &#39;publicDir&#39;: projectDirectory +  &#39;/public&#39; // where the processed files are added and served from.  
+
+}</code></pre>
+<p>projectDirectory refers to where you are running Slidedown.js.</p>
+<h1>Administrivia</h1>
+<h2>Author</h2>
+<p>Xerography was written by <a href="http://aaron.jorb.in">Aaron Jorbin</a> <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x61;&#97;&#114;&#111;&#x6e;&#64;&#106;&#111;&#x72;&#x62;&#x2e;&#x69;&#110;">&#x61;&#97;&#114;&#111;&#x6e;&#64;&#106;&#111;&#x72;&#x62;&#x2e;&#x69;&#110;</a> </p>
+<h2>Bugs &amp; so forth</h2>
+<p>Please report bugs or request new features at the GitHub page for Xerography: <a href="https://github.com/aaronjorbin/xerography/">https://github.com/aaronjorbin/xerography/</a></p>
+<h2>License</h2>
+<p>Xerography is licensed under the <a href="https://github.com/aaronjorbin/xerography/blob/master/MIT-license.txt">MIT license</a>.</p>
+        </div>
+    </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+<script src="js/script.js"></script>
+<script>
+var _gaq=[['_setAccount','undefined'],['_trackPageview'],['_trackPageLoadTime']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
