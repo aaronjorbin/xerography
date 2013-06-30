@@ -49,7 +49,7 @@ projectDirectory refers to where you are running Slidedown.js.
 
 ## Author
 
-Xerography was written by [Aaron Jorbin](http://aaron.jorb.in) <aaron@jorb.in> 
+Xerography is maintained by [Aaron Jorbin](http://aaron.jorb.in) <aaron@jorb.in> 
 
 ## Bugs & so forth
 
