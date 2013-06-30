@@ -1,14 +1,13 @@
 {
-  "author": "Aaron Jorbin <aaron@jorb.in> (http://aaron.jorb.in)",
   "name": "xerography",
   "description": "builds a site based solely on a reedme.md",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "repository": {
     "type": "git", 
     "url": "https://github.com/aaronjorbin/xerography"
   },
   "engines": {
-    "node": "~0.10.*"
+    "node": "~0.10.0"
   },
   "bin" : {
     "xerography" : "./bin/xerography.js"
