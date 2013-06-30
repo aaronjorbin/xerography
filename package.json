@@ -1,7 +1,7 @@
 {
   "name": "xerography",
   "description": "builds a site based solely on a reedme.md",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git", 
     "url": "https://github.com/aaronjorbin/xerography"
@@ -17,7 +17,7 @@
     "lodash" : ">=1.2.1",
     "fs.extra" : "=1.2.1",
     "node-static" : ">=0.5.9",
-     "xerography-peppercorn-saison": ">=0.0.0"
+    "xerography-peppercorn-saison": ">=0.0.1"
   },
   "preferGlobal": true,
   "devDependencies": {},
