@@ -28,11 +28,11 @@ var xerography  = function(){
     var sourceFilenames = config.source; 
     
     // If public doesn't exist as a sibling to sourceFilenam, try to create it,
-    if (! path.existsSync( config.publicDir ) )
+    if (! fs.existsSync( config.publicDir ) )
         fs.mkdirSync(config.publicDir, '0775');
-    if (! path.existsSync( config.publicDir + '/css' ) )
+    if (! fs.existsSync( config.publicDir + '/css' ) )
         fs.mkdirSync(config.publicDir + '/css', '0775');
-    if (! path.existsSync( config.publicDir + '/js' ) )
+    if (! fs.existsSync( config.publicDir + '/js' ) )
         fs.mkdirSync(config.publicDir + '/js', '0775');
 
     function loadFile(which) {
