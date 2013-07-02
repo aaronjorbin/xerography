@@ -14,7 +14,13 @@ var fs = require('fs.extra')
     , _ = require('lodash')
     , static = require('node-static') 
     , settings = require( __dirname + '/../src/settings.js') 
-    , templateTags = require( __dirname + '/../src/templateTags.js'); 
+    , templateTags = require( __dirname + '/../src/templateTags.js')
+    , program = require('commander');
+
+
+program.version('0.2.0.alpha')
+    .option('-b, --build', "Don't start the server, just build")
+    .parse(process.argv);
 
 
 var xerography  = function(){
@@ -157,13 +163,6 @@ var xerography  = function(){
 
     }
 
-    // Setup our Server
-    var fileRequest = new static.Server( config.publicDir );
-    require('http').createServer(function (request, response) {
-        request.addListener('end', function () {
-            fileRequest.serve(request, response);
-        }).resume();
-    }).listen(config.port);
 
     // Everything is ready to go, let's do our first build
     loadHeader();
@@ -174,6 +173,21 @@ var xerography  = function(){
     writeFile('css');
     writeFile('img');
     writeFile('headerjs');
-    console.log('displaying on http://localhost:' + config.port );
+
+
+    // Setup our Server
+    if (! program.build ) 
+    {
+        var fileRequest = new static.Server( config.publicDir );
+        require('http').createServer(function (request, response) {
+            request.addListener('end', function () {
+                fileRequest.serve(request, response);
+            }).resume();
+        }).listen(config.port);
+        console.log('displaying on http://localhost:' + config.port );
+    } else {
+        process.exit(0);
+    }
+
 }
 xerography();
